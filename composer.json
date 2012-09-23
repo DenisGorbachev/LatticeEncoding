@@ -1,0 +1,10 @@
+{
+    "require": {
+        "symfony/console": "2.0.14"
+    },
+    "autoload":{
+        "psr-0":{
+            "LatticeEncoding": "src/"
+        }
+    }
+}
