@@ -39,9 +39,7 @@ class Encoder
         $encodedArray = $lattice->getData();
         for ($i = 0; $i < 4; $i++) {
             $encodedArray = $lattice->punch($input, $encodedArray);
-//            dump($encodedArray);
             $input = mb_substr($input, $lattice->getArea() / 4);
-//            var_dump($input);
             if ($i % 2 == 0) {
                 $lattice->mirrorVertically();
             } else {
